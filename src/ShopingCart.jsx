@@ -1,6 +1,6 @@
 import { useState } from "react";
 import StoreButton from "./PButton";
- //localStorage.setItem('cart', JSON.stringify(cart));
+ //\\localStorage.setItem('cart', JSON.stringify(cart));
 export default function Cart() {
   const [cartList, setCartList] = useState(JSON.parse(localStorage.getItem('cart')));
   if (cartList == [] || cartList == '') {

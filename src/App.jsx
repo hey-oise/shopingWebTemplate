@@ -24,7 +24,7 @@ export default function App() {
         <p className="Logo">okegigide gadgets</p>
         <button className="cartButton" onClick={cartToggle}><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/shopping-cart--v1.png" alt="shopping-cart--v1" /></button></div>
       {page}
-      <a  href="google.com" className="whatsappM">
+      <a  href="https://wa.me/2347073722840" className="whatsappM">
         <img width="50" height="50" src="https://img.icons8.com/ios/50/whatsapp--v4.png" alt="whatsapp--v4"/>
       </a>
     </div>
