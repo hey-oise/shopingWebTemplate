@@ -11,6 +11,8 @@ export default function Cart() {
   else {
     return (
       <>
+      <div className="productsParent">
+        <div className="productPriPar">
         <div className="h1Parent">
           <div className="clearCartButton"><StoreButton color="orangered" value="clear cart" onclick={function () {
           localStorage.setItem('cart', JSON.stringify([]));
@@ -30,7 +32,9 @@ export default function Cart() {
             {product.specs.map(spec => <p className="productSpec">{spec}</p>)}
           </div>
         </div>)}
-      
+          </div>
+        </div>
+
       </>
     )
   }
