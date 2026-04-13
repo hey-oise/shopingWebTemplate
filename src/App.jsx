@@ -18,6 +18,16 @@ export default function App() {
       setOnpage('shop');
     }
   }
+  let cartC = JSON.parse(localStorage.getItem('cart'));
+  if (!cartC) {
+    localStorage.setItem('cart', '')
+  }
+
+  // //let valueLength = cartC ? cartC.length : 0;
+  // // let cartNo = cartC.length;
+  // const [cartLent, setCartlent] = useState(cartC.length);
+  // //alert(valueLength)
+  
   return (
     <div className="app">
       <div className="topBar">
@@ -25,7 +35,8 @@ export default function App() {
         <button className="cartButton" onClick={cartToggle}><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/shopping-cart--v1.png" alt="shopping-cart--v1" /></button></div>
       {page}
       <a  href="https://wa.me/2347073722840" className="whatsappM">
-        <img width="50" height="50" src="https://img.icons8.com/ios/50/whatsapp--v4.png" alt="whatsapp--v4"/>
+        <img width="50" height="50" src="https://img.icons8.com/ios/50/whatsapp--v4.png" alt="whatsapp--v4" />
+        {/* <div className="cartty"></div>*/}
       </a>
     </div>
   )

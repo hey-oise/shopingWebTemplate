@@ -3,7 +3,8 @@ import StoreButton from "./PButton";
  //\\localStorage.setItem('cart', JSON.stringify(cart));
 export default function Cart() {
   const [cartList, setCartList] = useState(JSON.parse(localStorage.getItem('cart')));
-  if (cartList == [] || cartList == '') {
+  if (!cartList || cartList == [] || cartList == "" || cartList.lenght == 0) {
+    localStorage.setItem('cart', JSON.stringify("hello"));
     return (
       <p>cart is empty...</p>
     )
@@ -21,8 +22,9 @@ export default function Cart() {
             </div>
           <h1>your cart</h1>
         </div>
-        {cartList.map(product => <div key={product.id} className="product">
-          <img className="productImage" alt="product image" src={product.image} />
+            {cartList.map(product => <div key={product.id} className="product">
+              <div className="productImagePar">
+          <img className="productImage" alt="product image" src={product.image} /></div>
           <a className="productName" href={`https://www.google.com/search?q=${product.name}, ${product.specs.map(productSpec => productSpec)}`}>{product.name}</a>
     
           <h3 className="productPrice">

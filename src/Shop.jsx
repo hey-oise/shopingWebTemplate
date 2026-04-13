@@ -15,7 +15,8 @@ export default function Shop() {
   let filterProducts = productList.filter(product => product.name.toLowerCase().includes(searchValue.toLowerCase()) || product.price.includes(searchValue));
   
   products = filterProducts.map(filterProduct => <div key={filterProduct.id} className="product">
-    <img className="productImage" alt="product image" src={filterProduct.image} />
+    <div className="productImagePar">
+    <img className="productImage" alt="product image" src={filterProduct.image} /></div>
     <a className="productName" href={`https://www.google.com/search?q=${filterProduct.name}, ${filterProduct.specs.map(productSpec => productSpec)}`}>{filterProduct.name}</a>
 
     <h3 className="productPrice">
@@ -28,6 +29,7 @@ export default function Shop() {
       <StoreButton color="mediumseagreen" value="add to cart" onclick={function () {
         cart.unshift(productList[filterProduct.id])
           ;
+          alert("added ot cart sucessfully!")
         let notify = <Notification value="added to cart sussesfully!" color="miduimseagreen" />;
         setNotification(notify);
         localStorage.setItem('cart', JSON.stringify(cart));

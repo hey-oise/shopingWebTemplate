@@ -100,6 +100,12 @@ body {
     padding: 0px;
     border-radius: 10px 10px 0px 0px;
     transition: 300ms;
+    overflow: hidden;
+    cursor: zoom-in;
+}
+.productImagePar {
+    overflow: hidden;
+    height: 200px;
 }
 .productImage:hover {
     transform: scale(1.1);
@@ -109,7 +115,7 @@ body {
     margin: 0px;
     margin-left: 10px;
     text-transform: capitalize;
-    color: slategrey;
+    color: black;
     text-decoration: none;
 }
 .productName:hover {
@@ -117,7 +123,7 @@ body {
 }
 .productPrice {
     margin: 0px;
-    color: blue;
+    color: green;
     margin-left: 10px;
 }
 .productSpecParent {
