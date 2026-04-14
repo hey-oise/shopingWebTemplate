@@ -328,6 +328,7 @@ footer {
     color: black;
     text-decoration: none;
     text-transform: uppercase;
+    width: fit-content;
 }
 .footerLinks:hover {
     text-decoration: underline;

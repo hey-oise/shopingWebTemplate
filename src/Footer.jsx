@@ -43,26 +43,22 @@ const devSocials = [{
   link: 'https://tiktok.com'
 },
 {
-  name: "twiter/X",
-  link: 'https://x.com'
+  name: "whatsapp",
+  link: 'https://wa.me'
   },
+  {
+    name: "telegram",
+    link: 'https://tg.com'
+  },
+  
+  {
+    name: "twitter/x",
+    link: 'https://x.com'
+  },
+  
   {
     name: "instagram",
     link: 'https://ig.com'
-  },
-  
-  {
-    name: "youtube",
-    link: 'https://yt.com'
-  },
-  
-  {
-    name: "facebook",
-    link: 'https://fb.com'
-  },
-  {
-    name: "discord",
-    link: 'https://discord.com'
   },
 ]
   function FooterLink({values}) {
@@ -82,7 +78,7 @@ export default function Footer() {
         <FooterLink values={socials} />
       </div>
       <div className="contacts">
-        <h2>get in touch with developer</h2>
+        <h2>get to know developer</h2>
         <FooterLink values={devSocials} />
       </div>
     </footer>

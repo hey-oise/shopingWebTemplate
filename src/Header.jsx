@@ -49,7 +49,7 @@ export default function Header() {
       <SingleHead text="dealers of all kinds of gadgets" imglink={gadgets} />
       <SingleHead text="repairs and servicing of gadgets" imglink={repairs} />
       <SingleHead text="trustworthy and reliable" imglink={handShake} />
-        <SingleHead text="safe and secure delivery" imglink={delivery} />
+        <SingleHead text=" fast and secure delivery" imglink={delivery} />
       </header>
     </>
   )
