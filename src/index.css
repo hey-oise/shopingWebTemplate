@@ -16,6 +16,8 @@ body {
 }
 header {
 display: flex;
+overflow: hidden;
+z-index: -10000;
 }
 .head {
     display: flex;
@@ -28,7 +30,7 @@ display: flex;
     right: 0vw;
     left: 0vw;
     width: 100vw;
-    height: 90vh;
+    height: 80vh;
     margin: 0px;
     transition: 500ms;
 }
