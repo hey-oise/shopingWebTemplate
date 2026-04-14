@@ -7,16 +7,75 @@ body {
     display: flex;
     margin-top: 200px;
     flex-direction: column;
+    margin: 0px;
+    padding: 0px;
     overflow-x: hidden;
 }
 * {
     font-family: "Saira Stencil", sans-serif;  
+}
+header {
+    display: flex;
+}
+.head {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-justify: center;
+    position: relative;
+    top: 70px;
+    right: 0vw;
+    left: 0vw;
+    width: 100vw;
+    height: 90vh;
+    margin: 0px;
+    transition: 500ms;
+}
+.headingparent {
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    text-justify: center;
+    right: 0px;
+    left: 00vw;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    font-size: 25px;
+    position: absolute;
+    background-color: #303145AD;
+    text-transform: capitalize;
+}
+.heading {
+    position: absolute;
+    color: white;
+    
+}
+.headImg {
+    position: relative;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 90vh;
+    margin: 0px;
+    z-index: -2000;
+}
+.headerButtons {
+    position: relative;
+    top: 100px;
+    display: flex;
+    gap: 10px;
 }
 .h1Parent {
     width: 100vw;
     text-align: center;
     margin-bottom: 50px;
     text-transform: uppercase;
+    margin-top: 100px;
 }
 .input-parent {
     display: flex;
@@ -83,7 +142,6 @@ body {
     background-color: #9d9d9d44;
     display: inline-block;
     padding: 0px;
-    backdrop-filter: blur(2px);
     transition: 500ms;
     display: flex;
     flex-direction: column;
@@ -117,6 +175,7 @@ body {
     text-transform: capitalize;
     color: black;
     text-decoration: none;
+    width: fit-content;
 }
 .productName:hover {
     text-decoration: underline;
@@ -247,6 +306,31 @@ body {
         righjt: -90%;
     }
 }
+footer {
+    background-color: #303145ad;
+    backdrop-filter: blur(10px);
+    min-height: 300px;
+    z-index: -10000;
+    position: relative;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: fit-content;
+}
+.footerLinks {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.footerLinks:hover {
+    text-decoration: underline;
+}
 /*#067a38*/
 @media (max-width: 500px) {
   body {
@@ -258,5 +342,20 @@ body {
   .search-button {
       position: relative;
       right: 252px;
+  }
+  .head {
+      height: 60vh;
+  }
+  .headingparent {
+      height: 100%;
+  }
+  .headImg {
+      height: 60vh;
+  }
+  .headerButtons {
+      top: 150px;
+  }
+  footer {
+      flex-direction: column;
   }
 }

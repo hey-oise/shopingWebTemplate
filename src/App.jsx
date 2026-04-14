@@ -1,13 +1,16 @@
-
+import Header from "./Header";
 import Shop from "./Shop";
 import Cart from "./ShopingCart";
 import { useState } from "react";
+import Footer from "./Footer.jsx";
 
 export default function App() {
   const [onPage, setOnpage] = useState("shop");
   let page;
   if (onPage == 'shop') {
-    page = <Shop />;
+    page = <>
+      <Header /><Shop />
+    </>;
   } else if (onPage == 'cart') {
     page = <div><button onClick={cartToggle} className="goBackToShop"><img width="32" height="32" src="https://img.icons8.com/windows/32/shop.png" alt="shop"/></button><Cart /></div>
   }
@@ -38,6 +41,7 @@ export default function App() {
         <img width="50" height="50" src="https://img.icons8.com/ios/50/whatsapp--v4.png" alt="whatsapp--v4" />
         {/* <div className="cartty"></div>*/}
       </a>
+      <Footer />
     </div>
   )
 }

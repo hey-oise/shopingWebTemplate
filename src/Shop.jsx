@@ -42,7 +42,7 @@ export default function Shop() {
     products = <div>No products found</div>;
   }
   return (
-    <>
+    <div id="shop">
     {notification}
       <div className="h1Parent">
         <h1>OUR DEALS</h1>
@@ -58,6 +58,6 @@ export default function Shop() {
         {products}
         </div>
       </div>
-    </>
+    </div>
   );
 };
