@@ -78,8 +78,13 @@ export default function Footer() {
         <FooterLink values={socials} />
       </div>
       <div className="contacts">
-        <h2>get to know developer</h2>
+        <h2>contact developer</h2>
         <FooterLink values={devSocials} />
+      </div>
+      <div className="lastPart">
+        <p>©2026 all rights reserved</p>
+        <p>built with ❤️</p>
+        
       </div>
     </footer>
   )

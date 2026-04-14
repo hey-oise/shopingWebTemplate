@@ -312,13 +312,14 @@ z-index: -10000;
 footer {
     background-color: #303145ad;
     backdrop-filter: blur(10px);
-    min-height: 300px;
+    min-height: 400px;
     z-index: 0;
     position: relative;
     padding: 30px;
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
+    margin-top: 200px;
 }
 .contacts {
     display: flex;
@@ -329,11 +330,25 @@ footer {
 .footerLinks {
     color: black;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: capitalize;
     width: fit-content;
 }
 .footerLinks:hover {
     text-decoration: underline;
+}
+.lastPart {
+    position: absolute;
+    bottom: 2px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: right;
+    color: black;
+    text-transform: capitalize;
+}
+.lastPart * {
+   margin: 0px; 
 }
 /*#067a38*/
 @media (max-width: 600px) {
@@ -345,16 +360,16 @@ footer {
   }
   .search-button {
       position: relative;
-      right: 252px;
+      right: 250px;
   }
   .head {
-      height: 60vh;
+      height: 100vh;
   }
   .headingparent {
       height: 100%;
   }
   .headImg {
-      height: 60vh;
+      height: 100vh;
   }
   .headerButtons {
       top: 150px;
