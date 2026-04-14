@@ -278,6 +278,7 @@ header {
     align-items: center;
     border-radius: 600px;
     background-color: #067a38;
+    z-index: 100;
     bottom: 20px;
     left: 15px;
     border: solid .02px #303145AD;
@@ -310,7 +311,7 @@ footer {
     background-color: #303145ad;
     backdrop-filter: blur(10px);
     min-height: 300px;
-    z-index: -10000;
+    z-index: 0;
     position: relative;
     padding: 30px;
     display: flex;
