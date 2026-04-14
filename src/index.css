@@ -15,7 +15,7 @@ body {
     font-family: "Saira Stencil", sans-serif;  
 }
 header {
-    display: flex;
+display: flex;
 }
 .head {
     display: flex;
@@ -334,7 +334,7 @@ footer {
     text-decoration: underline;
 }
 /*#067a38*/
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   body {
       overflow-x: hidden;
   }

@@ -12,10 +12,10 @@ export function SingleHead(props) {
     if (position < 300) {
       setPosition(position + 100);
     } else {
-      setPosition(0);
+      setPosition(position -300);
   }
   }
-  setInterval(movePosition, 4500)
+  setInterval(movePosition, 3000)
   return (
     <div className="head" style={{left:`-${position}vw`}}>
       <div className="headingparent">
