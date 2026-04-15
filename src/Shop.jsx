@@ -29,8 +29,8 @@ export default function Shop() {
       <StoreButton color="mediumseagreen" value="add to cart" onclick={function () {
         cart.unshift(productList[filterProduct.id])
           ;
-          alert("added ot cart sucessfully!")
-        let notify = <Notification value="added to cart sussesfully!" color="miduimseagreen" />;
+          alert("added sucessfully!")
+        let notify = <Notification value="added sussesfully!" color="miduimseagreen" />;
         setNotification(notify);
         localStorage.setItem('cart', JSON.stringify(cart));
       }}/>
