@@ -63,7 +63,7 @@ const devSocials = [{
 ]
   function FooterLink({values}) {
     return (
-      values.map(value => <a class="footerLinks" href={value.link}>{value.name}</a>)
+      values.map(value => <a target="_blank" className="footerLinks" href={value.link}>{value.name}</a>)
   )
 }
 export default function Footer() {
@@ -82,8 +82,8 @@ export default function Footer() {
         <FooterLink values={devSocials} />
       </div>
       <div className="lastPart">
-        <p>©2026 all rights reserved</p>
         <p>built with ❤️</p>
+        <p>©2026 all rights reserved</p>
         
       </div>
     </footer>

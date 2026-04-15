@@ -21,10 +21,7 @@ export default function App() {
       setOnpage('shop');
     }
   }
-  let cartC = JSON.parse(localStorage.getItem('cart'));
-  if (!cartC) {
-    localStorage.setItem('cart', '')
-  }
+  
 
   // //let valueLength = cartC ? cartC.length : 0;
   // // let cartNo = cartC.length;

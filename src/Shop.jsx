@@ -17,7 +17,7 @@ export default function Shop() {
   products = filterProducts.map(filterProduct => <div key={filterProduct.id} className="product">
     <div className="productImagePar">
     <img className="productImage" alt="product image" src={filterProduct.image} /></div>
-    <a className="productName" href={`https://www.google.com/search?q=${filterProduct.name}, ${filterProduct.specs.map(productSpec => productSpec)}`}>{filterProduct.name}</a>
+    <a className="productName" target="_blank" href={`https://www.google.com/search?q=${filterProduct.name}, ${filterProduct.specs.map(productSpec => productSpec)}`}>{filterProduct.name}</a>
 
     <h3 className="productPrice">
       {filterProduct.price}

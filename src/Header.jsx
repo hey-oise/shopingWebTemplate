@@ -67,16 +67,16 @@ export default function Header() {
     if (sliderPosition == 1)
     {
       setPosition(<SingleHead text="dealers of all kinds of gadgets" imglink={gadgets} />);
-    } else if (sliderPosition == 2) {
+    } else if (sliderPosition === 2) {
       setPosition(<SingleHead text="repairs/servicing of gadgets" imglink={repairs} />)
-    } else if (sliderPosition == 3) {
+    } else if (sliderPosition === 3) {
       setPosition(<SingleHead text="trustworthy and reliable" imglink={handShake} />)
-    } else if (sliderPosition == 4) {
+    } else if (sliderPosition === 4) {
       setPosition(<SingleHead text=" fast and secure delivery" imglink={delivery} />);
       setSliderPosition(1);
       }
   }
-  setInterval(moveHeader, 2000);
+  setTimeout(moveHeader, 4000);
   return (
     <>
       <header>
